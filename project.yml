@@ -1,0 +1,21 @@
+parameters: {}
+environment:
+  OPENAI_API_TOKEN: ${OPENAI_API_TOKEN}
+packages:
+    - name: OpenAI_proxy
+      shared: false
+      environment:
+        OPENAI_API_TOKEN: ${OPENAI_API_TOKEN}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: proxy
+          binary: false
+          main: ""
+          runtime: python:3.9
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: {}
+          annotations: {}
+          limits: {}
