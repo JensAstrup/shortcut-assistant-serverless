@@ -11,7 +11,6 @@ packages:
       functions:
         - name: proxy
           binary: false
-          main: ""
           runtime: python:3.9
           web: true
           webSecure: false
